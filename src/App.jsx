@@ -11,6 +11,9 @@ import zemorImage from "./assets/zemor.png";
 import coffeeImage from "./assets/coffee-shop.png";
 import iceCreamImage from "./assets/ice-cream.png";
 function App() {
+  const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
   const characterRef = useRef(null);
   const form = useRef(null);
   const sendEmail = (e) => {
@@ -18,11 +21,11 @@ function App() {
 
   emailjs
     .sendForm(
-      "service_leh6kzn",
-      "template_1yxdia4",
+      SERVICE_ID,
+      TEMPLATE_ID,
       form.current,
       {
-        publicKey: "w8jASyZ7mCvapVl5Y",
+        publicKey: PUBLIC_KEY,
       }
     )
     .then(
