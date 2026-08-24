@@ -1,0 +1,67 @@
+/* 🌸 Continuous Falling Petals */
+
+.petals-container {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+
+  pointer-events: none;
+
+  z-index: 999999;
+}
+
+.falling-petal {
+  position: absolute;
+
+  top: -50px;
+
+  height: auto;
+
+  opacity: 0.75;
+
+  object-fit: contain;
+
+  animation-name: rosePetalFall;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+  will-change: transform;
+}
+
+@keyframes rosePetalFall {
+
+  0% {
+    transform:
+      translate3d(0, -50px, 0)
+      rotate(0deg);
+  }
+
+  25% {
+    transform:
+      translate3d(80px, 25vh, 0)
+      rotate(120deg);
+  }
+
+  50% {
+    transform:
+      translate3d(-70px, 50vh, 0)
+      rotate(220deg);
+  }
+
+  75% {
+    transform:
+      translate3d(90px, 75vh, 0)
+      rotate(300deg);
+  }
+
+  100% {
+    transform:
+      translate3d(-60px, 110vh, 0)
+      rotate(420deg);
+
+    opacity: 0;
+  }
+}
