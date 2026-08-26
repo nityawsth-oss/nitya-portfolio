@@ -429,10 +429,7 @@ function App() {
           <div className="mt-8 flex flex-wrap gap-4">
 
             <button
-             onClick={() => {
-  alert("BUTTON WORKING");
-  scrollToSection("services");
-}}
+             onClick={() => scrollToSection("projects")}
               className="
                 rounded-full
                 border
