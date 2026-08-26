@@ -429,7 +429,7 @@ function App() {
           <div className="mt-8 flex flex-wrap gap-4">
 
             <button
-              onClick={() => scrollToSection("work")}
+              onClick={() => scrollToSection("SERVICES")}
               className="
                 rounded-full
                 border
@@ -446,9 +446,8 @@ function App() {
                 hover:scale-105
               "
             >
-            <a href="#services">
-                 VIEW MY WORK →
-              </a>
+            
+              VIEW MY WORK →
             </button>
 
             <button
