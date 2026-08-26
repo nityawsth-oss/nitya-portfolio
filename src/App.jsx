@@ -10,6 +10,11 @@ import healthcareImage from "./assets/healthcare.png";
 import zemorImage from "./assets/zemor.png";
 import coffeeImage from "./assets/coffee-shop.png";
 import iceCreamImage from "./assets/ice-cream.png";
+import vivekaCertificate from "./assets/hackathon-viveka.pdf.png";
+import smartGateCertificate from "./assets/hackathon-ids-smartgate.png";
+import hackoviumCertificate from "./assets/hackathon-hackovium.pdf.png";
+import javaCertificate from "./assets/java certification.jpg";
+import mernCertificate from "./assets/mern certification.jpg";
 function App() {
   const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
   const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
@@ -1076,7 +1081,7 @@ function App() {
           <div className="relative min-h-[330px] overflow-hidden bg-[#0d0d0d]">
 
   <img
-    src="/src/assets/resume.png"
+    src={resumeImage}
     alt="Resume Builder"
     className="
       h-full
@@ -1191,7 +1196,7 @@ function App() {
             <div className="relative h-64 overflow-hidden bg-[#0d0d0d]">
 
   <img
-    src="/src/assets/study-swap.png"
+    src={studySwapImage}
     alt="Study Swap"
     className="
       h-full
@@ -1259,7 +1264,7 @@ function App() {
             <div className="relative h-64 overflow-hidden bg-[#0d0d0d]">
 
   <img
-    src="/src/assets/healthcare.png"
+    src={healthcareImage}
     alt="Healthcare Project"
     className="
       h-full
@@ -1365,7 +1370,7 @@ function App() {
             <div className="relative h-64 overflow-hidden bg-[#0d0d0d]">
 
   <img
-    src="/src/assets/zemor.png"
+    src={zemorImage}
     alt="Zemor UI UX Design"
     className="
       h-full
@@ -1429,7 +1434,7 @@ function App() {
             <div className="relative h-64 overflow-hidden bg-[#0d0d0d]">
 
   <img
-    src="/src/assets/coffee-shop.png"
+    src={coffeeImage}
     alt="Coffee Shop UI UX Design"
     className="
       h-full
@@ -1492,7 +1497,7 @@ function App() {
             <div className="relative h-64 overflow-hidden bg-[#0d0d0d]">
 
   <img
-     src="/src/assets/ice-cream.png"
+     src={iceCreamImage}
     alt="Ice Cream Animation"
     className="
       h-full
@@ -1910,7 +1915,7 @@ function App() {
           >
 
             <img
-               src="/src/assets/hackathon-viveka.pdf.png"
+              src={vivekaCertificate}
               alt="Hackathon Certificate"
               className="
                 aspect-[4/3]
@@ -2172,7 +2177,7 @@ function App() {
           >
 
             <img
-              src="/src/assets/hackathon-ids-smartgate.png"
+              src={smartGateCertificate}
               alt="Hackathon Certificate"
               className="
                 aspect-[4/3]
@@ -2220,7 +2225,7 @@ function App() {
           >
 
             <img
-              src="/src/assets/hackathon-hackovium.pdf.png"
+              src={hackoviumCertificate}
               alt="Hackathon Certificate"
               className="
                 aspect-[4/3]
@@ -2461,7 +2466,7 @@ function App() {
           >
 
             <img
-              src="/src/assets/java certification.jpg"
+              src={javaCertificate}
               alt="Certification"
               className="
                 aspect-[4/3]
@@ -2508,7 +2513,7 @@ function App() {
           >
 
             <img
-              src="/src/assets/mern certification.jpg"
+              src={mernCertificate}
               alt="Certification"
               className="
                 aspect-[4/3]
