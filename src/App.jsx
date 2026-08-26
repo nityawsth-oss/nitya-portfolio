@@ -446,7 +446,9 @@ function App() {
                 hover:scale-105
               "
             >
-              VIEW MY WORK →
+            <a href="#services">
+                 VIEW MY WORK →
+              </a>
             </button>
 
             <button
