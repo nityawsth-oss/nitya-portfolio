@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import character from "./assets/nitya-character.png";
 import aboutCharacter from "./assets/about.png";
-import PetalEffect from "./PetalEffect";
 import resumeImage from "./assets/resume.png";
 import studySwapImage from "./assets/study-swap.png";
 import healthcareImage from "./assets/healthcare.png";
@@ -255,7 +254,7 @@ function App() {
 
   return (
     <main className="min-h-screen overflow-hidden bg-[#080808] text-white">
-      <PetalEffect />
+      
 
       {/* =====================================================
           NAVBAR
@@ -325,7 +324,7 @@ function App() {
 
       <section
         id="home"
-        className="relative flex min-h-screen items-center justify-center px-6 pt-28 md:px-12"
+        className="relative flex min-h-screen flex-col items-center justify-center gap-10 px-5 pt-32 pb-16 md:flex-row md:gap-0 md:px-12 md:pt-28 md:pb-0"
       >
 
         {/* Character Area */}
@@ -371,14 +370,15 @@ function App() {
             src={character}
             alt="Nitya character"
             className="
-              relative
-              z-10
-              w-[72%]
-              max-w-[500px]
-              object-contain
-              drop-shadow-[0_20px_60px_rgba(0,0,0,0.7)]
-              md:w-[82%]
-            "
+               relative
+               z-10
+               w-[55%]
+               max-w-[280px]
+               object-contain
+               drop-shadow-[0_20px_60px_rgba(0,0,0,0.7)]
+               md:w-[82%]
+               md:max-w-[500px]
+              "
           />
 
         </div>
@@ -386,22 +386,23 @@ function App() {
 
         {/* Hero Text */}
 
-        <div className="relative z-20 w-full md:w-1/2">
+        <div className="relative z-20 flex w-full flex-col items-center text-center md:w-1/2 md:items-start md:text-left">
 
-          <p className="mb-5 text-sm font-medium uppercase tracking-[0.3em] text-fuchsia-400">
+          <p className="mb-5 text-xs font-medium uppercase tracking-[0.22em] text-fuchsia-400 sm:text-sm md:tracking-[0.3em]">
             UI / UX DESIGNER • FULL STACK DEVELOPER
           </p>
 
           <h1
             className="
-              text-[16vw]
-              font-black
-              uppercase
-              leading-[0.78]
-              tracking-[-0.07em]
-              text-zinc-100
-              md:text-[7vw]
-            "
+           text-[17vw]
+           font-black
+           uppercase
+           leading-[0.82]
+           tracking-[-0.065em]
+           text-zinc-100
+           sm:text-[15vw]
+           md:text-[7vw]
+           "
           >
 
             <span className="block">
@@ -418,7 +419,7 @@ function App() {
 
           </h1>
 
-          <p className="mt-8 max-w-xl text-sm leading-7 text-zinc-400 md:text-base">
+          <p className="mt-7 max-w-[340px] text-sm leading-7 text-zinc-400 sm:max-w-xl md:mt-8 md:text-base">
             I design and build modern digital experiences that combine
             clean interfaces, creative visuals and thoughtful interactions.
           </p>
@@ -426,25 +427,28 @@ function App() {
 
           {/* HERO BUTTONS */}
 
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div className="mt-8 flex w-full flex-col items-center gap-4 sm:flex-row sm:justify-center md:justify-start">
 
             <button
              onClick={() => scrollToSection("projects")}
-              className="
-                rounded-full
-                border
-                border-zinc-600
-                px-7
-                py-3
-                text-sm
-                font-semibold
-                transition
-                duration-300
-                hover:border-fuchsia-500
-                hover:bg-fuchsia-500
-                hover:text-white
-                hover:scale-105
-              "
+             className="
+  w-full
+  max-w-[320px]
+  rounded-full
+  border
+  border-zinc-600
+  px-7
+  py-3
+  text-sm
+  font-semibold
+  transition
+  duration-300
+  hover:border-fuchsia-500
+  hover:bg-fuchsia-500
+  hover:text-white
+  hover:scale-105
+  sm:w-auto
+"
             >
             
               VIEW MY WORK →
@@ -452,18 +456,21 @@ function App() {
 
             <button
               onClick={() => scrollToSection("contact")}
-              className="
-                rounded-full
-                bg-fuchsia-600
-                px-7
-                py-3
-                text-sm
-                font-semibold
-                transition
-                duration-300
-                hover:bg-fuchsia-500
-                hover:scale-105
-              "
+             className="
+  w-full
+  max-w-[320px]
+  rounded-full
+  bg-fuchsia-600
+  px-7
+  py-3
+  text-sm
+  font-semibold
+  transition
+  duration-300
+  hover:bg-fuchsia-500
+  hover:scale-105
+  sm:w-auto
+"
             >
               CONTACT ME
             </button>
