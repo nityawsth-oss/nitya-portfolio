@@ -410,11 +410,11 @@ function App() {
             </span>
 
             <span className="block text-fuchsia-500">
-              NITYA Randi 
+              NITYA 
             </span>
 
             <span className="block">
-              Bhn ki lodhi mc 
+              Awasthi
             </span>
 
           </h1>
