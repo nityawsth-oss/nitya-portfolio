@@ -410,7 +410,7 @@ function App() {
             </span>
 
             <span className="block text-fuchsia-500">
-              NITYA BHONDU
+              NITYA BHONDU Chutiya
             </span>
 
             <span className="block">
